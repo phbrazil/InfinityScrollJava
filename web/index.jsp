@@ -16,7 +16,7 @@
             #content-box{
                 background-color:#FAFAFA;
                 border:2px solid #888;
-                height:300px;
+                height:450px;
                 overflow:scroll;
                 padding:4px;
             }
@@ -40,7 +40,7 @@
                     if ($("#content-box").scrollTop() >= ($("#content-wrapper").height() - $("#content-box").height()) && $contentLoadTriggered == false)
                     {
                         $contentLoadTriggered = true;
-                        $.get("infinitContentServlet", function (data) {
+                        $.get("infiniteServlet", function (data) {
                             $("#content-wrapper").append(data);
                             $contentLoadTriggered = false;
                         });
@@ -52,17 +52,67 @@
     </head>
     <body>
         <div class='col-md-10'>
-            <h1 class='text-muted mt-4'>Demo page: Infinite Scroll com Java e JQuery</h1>
+            <h2 class='text-muted mt-4'>Demo page: Infinite Scroll com Java e JQuery</h2>
         </div>
         <div class="col-md-12">
             <div id="content-box">
-                <div id="content-wrapper">
+                <table id='content-wrapper' class='table table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Conteúdo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class='badge badge-info'>1</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>2</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>3</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>4</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>5</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>6</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>7</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>8</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>9</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                        <tr>
+                            <td><span class='badge badge-info'>10</span></td>
+                            <td>hueheuheuehuehue</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--div id="content-wrapper">
                     <p><span>1</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
                     <p><span>2</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
                     <p><span>3</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
                     <p><span>4</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
                     <p><span>5</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                </div>
+                </div-->
             </div>
         </div>
     </body>
