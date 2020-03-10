@@ -17,37 +17,25 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "infinitContentServlet", urlPatterns = {"/infinitContentServlet"})
 public class infinitContentServlet extends HttpServlet {
 
-    private static Integer counter = 1;
+    private static Integer counter = 6;
 
-    protected void processRequest(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
-
-        PrintWriter out = response.getWriter();
-        try {
-            String resp = "";
-            for (int i = 1; i <= 10; i++) {
-                resp += "<p><span>"
-                        + counter++
-                        + "</span> This is the dynamic content served freshly from server</p>";
-            }
-            out.write(resp);
-        } finally {
-            out.close();
-        }
-    }
-
+   
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-        
-        System.out.println("entrei no get");
+
+        if(request.getCharacterEncoding() == null){
+            request.setCharacterEncoding("UTF-8");
+        }
+            
+        response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
         try {
             String resp = "";
             for (int i = 1; i <= 10; i++) {
                 resp += "<p><span>"
                         + counter++
-                        + "</span> This is the dynamic content served freshly from server</p>";
+                        + "</span> Conteúdo atualizado dinamicamente do servidor</p>";
             }
             out.write(resp);
         } finally {
@@ -58,7 +46,5 @@ public class infinitContentServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("entrei aqui post");
-        processRequest(request, response);
     }
 }
