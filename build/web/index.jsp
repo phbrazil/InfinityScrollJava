@@ -7,12 +7,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <title>Infinity Scroll com Java e Jquery</title>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
         <style type="text/css">
-            body{
-                font-family:Arial;
-                font-size:.93em;
-            }
+
             #content-box{
                 background-color:#FAFAFA;
                 border:2px solid #888;
@@ -20,18 +21,7 @@
                 overflow:scroll;
                 padding:4px;
             }
-            #content-box p{
-                border:1px solid #EEE;
-                background-color:#F0F0F0;
-                padding:3px;
-            }
-            #content-box p span{
-                color:#00F;
-                display:block;
-                font:bold 21px Arial;
-                float:left;
-                margin-right:10px;
-            }
+
         </style>
         <script type="text/javascript">
             $(document).ready(function () {
@@ -106,13 +96,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <!--div id="content-wrapper">
-                    <p><span>1</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                    <p><span>2</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                    <p><span>3</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                    <p><span>4</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                    <p><span>5</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare facilisis mollis. Etiam non sem massa, a gravida nunc. Mauris lectus augue, posuere at viverra sed, dignissim sed libero. </p>
-                </div-->
             </div>
         </div>
     </body>
