@@ -63,38 +63,47 @@
                         <tr>
                             <td><span class='badge badge-info'>2</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>3</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>4</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>5</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>6</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>7</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>8</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>9</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>10</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                     </tbody>
                 </table>

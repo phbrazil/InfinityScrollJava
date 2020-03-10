@@ -31,14 +31,15 @@ public class infinitContentServlet extends HttpServlet {
             request.setCharacterEncoding("UTF-8");
         }
         response.setCharacterEncoding("UTF-8");
-        
+
         PrintWriter out = response.getWriter();
         try {
             String resp = "";
             for (int i = 1; i <= 10; i++) {
                 resp += "<tr>"
                         + "<td><span class='badge badge-info'>" + counter++ + "</span></td>"
-                        + "<td>Conteúdo atualizado dinamicamente do servidor em "+data+"</td>"
+                        + "<td>Conteúdo atualizado dinamicamente do servidor em " + data + "</td>"        
+                        + "<td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>"
                         + "</tr>";
             }
             out.write(resp);
