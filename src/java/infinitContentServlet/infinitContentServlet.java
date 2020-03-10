@@ -25,20 +25,20 @@ public class infinitContentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
 
-        String dataatual = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+        String data = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
 
         if (request.getCharacterEncoding() == null) {
             request.setCharacterEncoding("UTF-8");
         }
-
         response.setCharacterEncoding("UTF-8");
+        
         PrintWriter out = response.getWriter();
         try {
             String resp = "";
             for (int i = 1; i <= 10; i++) {
                 resp += "<tr>"
                         + "<td><span class='badge badge-info'>" + counter++ + "</span></td>"
-                        + "<td>Conteúdo atualizado dinamicamente do servidor em "+dataatual+"</td>"
+                        + "<td>Conteúdo atualizado dinamicamente do servidor em "+data+"</td>"
                         + "</tr>";
             }
             out.write(resp);

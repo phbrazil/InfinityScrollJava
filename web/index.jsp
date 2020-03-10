@@ -46,17 +46,19 @@
         </div>
         <div class="col-md-12">
             <div id="content-box">
-                <table id='content-wrapper' class='table table-responsive'>
+                <table id='content-wrapper' class='table table-responsive text-muted'>
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Conteúdo</th>
+                            <th>Imagem</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><span class='badge badge-info'>1</span></td>
                             <td>hueheuheuehuehue</td>
+                            <td><img src='https://source.unsplash.com/random' style='width: 40px; height: 40px'></td>
                         </tr>
                         <tr>
                             <td><span class='badge badge-info'>2</span></td>
